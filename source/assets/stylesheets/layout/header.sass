@@ -1,0 +1,39 @@
+.site-header
+  padding-top: 1rem
+
+  .logo
+    img
+      +size(auto 4em)
+
+  .site-search
+    float: right
+    width: 35%
+    margin-top: 1rem
+    text-align: right
+    input[type="text"]
+      display: inline-block
+      width: 80%
+    button
+      display: inline-block
+      vertical-align: middle
+      padding: 0
+      background: none
+      border: none
+      &:focus
+        outline: none
+      img
+        +size(1.5em)
+
+  nav
+    +clearfix
+    clear: both
+    margin-top: 1rem
+    background: $blue
+    a
+      display: block
+      float: left
+      +calc(width, "100% / 7")
+      padding: 1em 0
+      text-align: center
+      color: #fff
+

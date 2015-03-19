@@ -1,0 +1,30 @@
+.hero-home
+  //display: none
+  +clearfix
+  padding: 2rem 0
+  background: url(../images/home-hero-temp.jpg) no-repeat center center
+  background-size: cover
+
+  .find-jobs-form-wrap
+    float: right
+    width: 30%
+
+.homepage-cdl-tests-callouts
+  padding: 4rem 0
+  text-align: center
+
+  .cdl-test-callouts
+    +row
+
+  p
+    max-width: 40rem
+    margin: 1em auto
+
+  .cdl-test-callout
+    width: 100%
+
+    +media($smallScreenUp)
+      +span-columns(4)
+      +omega(3n)
+
+

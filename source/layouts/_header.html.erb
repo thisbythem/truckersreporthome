@@ -1,1 +1,23 @@
-i'm the header
+<header class="site-header">
+  <div class="container">
+    <% link_to '/', class: "logo" do %>
+      <%= image_tag 'tr-logo.svg' %>
+    <% end %>
+
+    <form class="site-search">
+      <input type="text" placeholder="Search">
+      <button type="search"><%= image_tag 'magnifying_glass.svg' %> </button>
+    </form>
+
+    <nav>
+       <%= link_to 'Forum', '/' %>
+       <%= link_to 'CDL Practice Tests', '/cdl-practice-tests' %>
+       <%= link_to 'Resources', '/resources' %>
+       <%= link_to 'Trucking Schools', '/trucking-schools' %>
+       <%= link_to 'Trucking Insurance', '/trucking-insurance' %>
+       <%= link_to 'Freight Factoring', '/freight-factoring' %>
+       <%= link_to 'Trucking Jobs', '/trucking-jobs' %>
+     </nav>
+
+  </div>
+</header>

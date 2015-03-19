@@ -19,10 +19,10 @@ button
   white-space: nowrap
 
   &:hover,
-  &:focus
+  &:focus, &:active
+    outline: 0 !important
     background-color: darken($action-color, 15%)
     color: #fff
-
 
   &:disabled
     cursor: not-allowed
