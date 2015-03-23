@@ -1,55 +1,42 @@
-body
-  +font-feature-settings("kern", "liga", "pnum")
+html
   -webkit-font-smoothing: antialiased
-  color: $base-font-color
-  font-family: $base-font-family
-  font-size: $base-font-size
-  line-height: $base-line-height
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-  font-family: $heading-font-family
-  font-size: $base-font-size
-  line-height: $heading-line-height
-  margin: 0 0 $small-spacing
-
+body
+  font: normal 100%/1.5 $base-font-family
+  color: $base-text-color
 
 p
-  margin: 0 0 $small-spacing
+  line-height: 1.5em
 
+h1, h2, h3, h4, h5, h6
+  font-family: $heading-font-family
+  line-height: 1.2
 
-a
-  color: $action-color
-  text-decoration: none
-  transition: color 0.1s linear
+h1, h2, h3, h4
+  letter-spacing: -.025em
 
-  &:active,
-  &:focus,
-  &:hover
-    color: darken($action-color, 15%)
++media($tinyScreenUp)
+  body
+    font-size: 105%
 
++media($miniScreenUp)
+  body
+    font-size: 110%
 
-  &:active,
-  &:focus
-    outline: none
++media($smallScreenUp)
+  body
+    font-size: 115%
 
+// +media($mediumScreenUp)
+//   body
+//     font-size: 120%
 
+// +media($largeScreenUp)
+//   body
+//     font-size: 125%
 
-hr
-  border-bottom: $base-border
-  border-left: none
-  border-right: none
-  border-top: none
-  margin: $base-spacing 0
+// +media($hugeScreenUp)
+//   body.blog
+//     font-size: 130%
 
-
-img,
-picture
-  margin: 0
-  max-width: 100%
 

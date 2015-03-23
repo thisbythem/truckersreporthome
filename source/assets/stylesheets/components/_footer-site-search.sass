@@ -1,0 +1,47 @@
+.footer-site-search-wrapper
+  padding: 2.25rem 0
+  border-top: 1px solid darken($yellow, 3)
+  border-bottom: 3px solid $orange
+  background: $yellow
+
+.footer-site-search
+  text-align: center
+
+  input[type="text"]
+    +transition(background, .2s)
+    display: inline-block
+    vertical-align: middle
+    width: 80%
+    margin: 0
+    padding: 1.5rem
+    border-color: darken($yellow, 5)
+    background:  lighten($yellow, 15)
+    color: $gray-dark
+    box-shadow: none
+    &:focus
+      background:  lighten($yellow, 25)
+
+  button[type="submit"]
+    display: inline-block
+    vertical-align: middle
+    padding: 0
+    margin: 0 0 0 1%
+    border: none
+    background: none
+    font-size: 1.5em
+    color: $gray-dark
+    box-shadow: none
+    // &:hover
+    //   color: $white
+
+  ::-webkit-input-placeholder
+    color: $gray-dark
+
+  :-moz-placeholder
+    color: $gray-dark
+
+  ::-moz-placeholder
+    color: $gray-dark
+
+  :-ms-input-placeholder
+    color: $gray-dark

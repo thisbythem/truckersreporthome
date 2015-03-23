@@ -1,13 +1,29 @@
 .hero-home
-  //display: none
   +clearfix
-  padding: 2rem 0
-  background: url(../images/home-hero-temp.jpg) no-repeat center center
-  background-size: cover
+  position: relative
+  padding: 1rem 0
+  background: darken($orange, 5)
+
+  +media($smallScreenUp)
+    background: url(../images/home-hero-temp.jpg) no-repeat center center
+    background-size: cover
+
+  +media($mediumScreenUp)
+    padding: 4rem 0
 
   .find-jobs-form-wrap
-    float: right
-    width: 30%
+    max-width: 380px
+    margin: 0 auto
+
+    +media($mediumScreenUp)
+      p
+        +span-columns(6)
+        +omega(2n)
+
+  +media($smallScreenUp)
+    .find-jobs-form-wrap
+      float: right
+
 
 .homepage-cdl-tests-callouts
   padding: 4rem 0
@@ -16,15 +32,57 @@
   .cdl-test-callouts
     +row
 
-  p
-    max-width: 40rem
-    margin: 1em auto
+  .cld-tests-callout-header
+    margin-bottom: 3em
+    p
+      max-width: 46rem
+      margin: 1em auto
 
   .cdl-test-callout
-    width: 100%
 
     +media($smallScreenUp)
       +span-columns(4)
       +omega(3n)
+
+.news-resources-wrap
+  padding: 2rem 0
+  background: lighten($gray-lighter, 4)
+  +media($smallScreenUp)
+    padding: 4rem 0
+
+  .sub-section-title
+    color: $gray-medium
+
+  .trucker-news-item
+    +clearfix
+    margin-bottom: 2rem
+    padding: 1rem
+    background: lighten($gray-lighter, 6)
+
+    img
+      float: left
+      +size(80px)
+      margin-right: 1rem
+
+    .title
+      margin: 0 0 .25em
+      font-size: 1.1em
+      font-weight: 600
+      line-height: 1.1
+      color: $base-text-color
+
+    .comment-count
+      font-size: .75em
+
+  .resources
+    img
+      margin-bottom: 1rem
+
+  +media($smallScreenUp)
+    section
+      +span-columns(6)
+
+    .resources
+      padding-left: 1rem
 
 

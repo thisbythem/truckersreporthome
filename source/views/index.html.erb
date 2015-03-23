@@ -2,59 +2,84 @@
 title: Truckers Report
 ---
 <div class="hero-home"><div class="container">
-  <div class="find-jobs-form-wrap form-vert">
+  <div class="find-jobs-form-wrap form-vert home-hero">
     <%= partial "views/find-job-form" %>
-  </div>
-  <div class="job-type-callouts">
-    <a href="/">All Trucking Jobs</a>
-    <a href="/">All Trucking Jobs</a>
-    <a href="/">All Trucking Jobs</a>
-    <a href="/">All Trucking Jobs</a>
   </div>
 </div></div>
 
+<%= partial "views/job-type-callouts-bar" %>
+
 <article class="homepage-cdl-tests-callouts">
   <div class="container">
-    <h2>Free CDL Practice Tests</h3>
-    <p>They say that “practice makes perfect” and taking the CDL practice test is a great way to prepare for taking this important test.  The actual CDL exam can be quite difficult, thus, taking time to undergo studying will make sure that you know your information.</p>
+    <header class="cld-tests-callout-header">
+      <h2 class="section-title"><b>Free</b> CDL Practice Tests</h3>
+      <hr>
+      <p>They say that “practice makes perfect” and taking the CDL practice test is a great way to prepare for taking this important test.  The actual CDL exam can be quite difficult, thus, taking time to undergo studying will make sure that you know your information.</p>
+    </header>
 
     <div class="cdl-test-callouts">
-      <div class="cdl-test-callout">
-        <a href="/">
-          <%= image_tag 'slug.svg' %>
-          <h4>General Knowledge Test</h4>
+
+      <div class="cdl-test-callout"><div class="inner">
+        <a href="/" class="link-wrap">
+          <%= image_tag 'cdl-general.svg' %>
+          <p>General Knowledge Test</p>
         </a>
-      </div>
-      <div class="cdl-test-callout">
-        <a href="/">
-          <%= image_tag 'slug.svg' %>
-          <h4>Air Brakes Test</h4>
+        <div class="over-buttons">
+          <a href="/" class="learn-more">Learn More</a>
+          <a href="/" class="take-test">Take the Test!</a>
+        </div>
+      </div></div>
+
+      <div class="cdl-test-callout"><div class="inner">
+        <a href="/" class="link-wrap">
+          <%= image_tag 'cdl-brakes.svg' %>
+          <p>Air Brakes Test</p>
         </a>
-      </div>
-      <div class="cdl-test-callout">
-        <a href="/">
-          <%= image_tag 'slug.svg' %>
-          <h4>Combination Vehicle Test</h4>
+        <div class="over-buttons">
+          <a href="/" class="learn-more">Learn More</a>
+          <a href="/" class="take-test">Take the Test!</a>
+        </div>
+      </div></div>
+      <div class="cdl-test-callout"><div class="inner">
+        <a href="/" class="link-wrap">
+          <%= image_tag 'cdl-combo.svg' %>
+          <p>Combination Vehicle Test</p>
         </a>
-      </div>
-      <div class="cdl-test-callout">
-        <a href="/">
-          <%= image_tag 'slug.svg' %>
-          <h4>Tanker Test</h4>
+        <div class="over-buttons">
+          <a href="/" class="learn-more">Learn More</a>
+          <a href="/" class="take-test">Take the Test!</a>
+        </div>
+      </div></div>
+      <div class="cdl-test-callout"><div class="inner">
+        <a href="/" class="link-wrap">
+          <%= image_tag 'cdl-tanker.svg' %>
+          <p>Tanker Test</p>
         </a>
-      </div>
-      <div class="cdl-test-callout">
-        <a href="/">
-          <%= image_tag 'slug.svg' %>
-          <h4>Hazmet Test</h4>
+        <div class="over-buttons">
+          <a href="/" class="learn-more">Learn More</a>
+          <a href="/" class="take-test">Take the Test!</a>
+        </div>
+      </div></div>
+      <div class="cdl-test-callout"><div class="inner">
+        <a href="/" class="link-wrap">
+          <%= image_tag 'cdl-hazmet.svg' %>
+          <p>Hazmet Test</p>
         </a>
-      </div>
-      <div class="cdl-test-callout">
-        <a href="/">
-          <%= image_tag 'slug.svg' %>
-          <h4>Double/Triples Test</h4>
+        <div class="over-buttons">
+          <a href="/" class="learn-more">Learn More</a>
+          <a href="/" class="take-test">Take the Test!</a>
+        </div>
+      </div></div>
+      <div class="cdl-test-callout"><div class="inner">
+        <a href="/" class="link-wrap">
+          <%= image_tag 'cdl-doubles.svg' %>
+          <p>Double/Triples Test</p>
         </a>
-      </div>
+        <div class="over-buttons">
+          <a href="/" class="learn-more">Learn More</a>
+          <a href="/" class="take-test">Take the Test!</a>
+        </div>
+      </div></div>
     </div>
 
   </div>
@@ -62,25 +87,37 @@ title: Truckers Report
 
 <div class="news-resources-wrap"><div class="container">
   <section class="trucker-news">
-    <h3>Trucker News</h3>
+    <h3 class="sub-section-title">Trucker News</h3>
     <div class="trucker-news-item">
-      <img src="http://placehold.it/80x80">
-      <h5>Train Derails After Hitting Stuck Truck, 55 Injured</h5>
-      <a class="comment-count"> 25 comments</a>
+      <a href="/trucker-news">
+        <%= image_tag 'news-slug.jpg' %>
+        <p class="title">Train Derails After Hitting Stuck Truck, 55 Injured</p>
+        <span class="comment-count"> <i class="fa fa-comment"></i> <span class="comment-number">25</span> comments</span>
+      </a>
     </div>
     <div class="trucker-news-item">
-      <img src="http://placehold.it/80x80">
-      <h5>Train Derails After Hitting Stuck Truck, 55 Injured</h5>
-      <a class="comment-count"> 25 comments</a>
+      <a href="/trucker-news">
+        <%= image_tag 'news-slug.jpg' %>
+        <p class="title">Train Derails After Hitting Stuck Truck, 55 Injured</p>
+        <span class="comment-count"> <i class="fa fa-comment"></i> <span class="comment-number">25</span> comments</span>
+      </a>
     </div>
     <div class="trucker-news-item">
-      <img src="http://placehold.it/80x80">
-      <h5>Train Derails After Hitting Stuck Truck, 55 Injured</h5>
-      <a class="comment-count"> 25 comments</a>
+      <a href="/trucker-news">
+        <%= image_tag 'news-slug.jpg' %>
+        <p class="title">Train Derails After Hitting Stuck Truck, 55 Injured</p>
+        <span class="comment-count"><i class="fa fa-comment"></i> <span class="comment-number">25</span> comments</span>
+      </a>
     </div>
   </section>
   <section class="resources">
-    <img src="http://placehold.it/400x80">
+    <h3 class="sub-section-title">Trucker's Report Resources</h3>
+    <a href="/forum" class="forum-callout"><%= image_tag 'forum-callout.jpg' %></a>
+    <div class="resource-callout-wrap">
+      <h3>More Resources</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <a href="/resources" class="more">See Resources</a>
+    </div>
   </section>
 </div></div>
 

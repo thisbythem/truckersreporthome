@@ -1,0 +1,50 @@
+$job-form-bg: $orange
+
+.find-jobs-form
+
+  .tr-logo-jobs
+    +size(auto 1em)
+
+  select
+    width: 100%
+    margin-bottom: .5em
+
+
+  button[type="submit"]
+    +btn()
+    font-size: 1em
+
+.hero-home .find-jobs-form
+  input
+    border: none
+
+  h2
+    margin: 0 0 .25em
+    padding-bottom: .25em
+    border-bottom: 1px solid darken($job-form-bg, 5)
+    text-transform: uppercase
+    font-weight: 400
+    text-shadow: darken($job-form-bg, 10) 1px 1px 0
+    color: $white
+  p
+    padding: .15rem 0
+
+  button[type="submit"]
+    display: block
+    width: 100%
+    padding: .75em 0
+
+
+
+// LOCATION STYLES
+
+.find-jobs-form-wrap.home-hero
+  padding: 1rem
+  background: $job-form-bg
+  border-radius: 5px
+  box-shadow: transparentize($gray-dark, .9) 7px 7px 0 0
+
+
+
+
+

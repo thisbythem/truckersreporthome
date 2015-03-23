@@ -1,0 +1,72 @@
+.cdl-test-callout
+  width: 100%
+  margin-bottom: 2em
+
+  .inner
+    margin: 0 1em
+    position: relative
+    overflow: hidden
+    border: 1px solid darken($gray-lighter, 4)
+    border-radius: 5px
+    box-shadow: transparentize($gray-dark, .975) 8px 8px 0 -3px
+    &:before
+      content: "FREE"
+      +position(absolute, 10px auto auto -25px)
+      width: 100px
+      padding: .5em
+      font-size: .65em
+      font-weight: 600
+      letter-spacing: .05em
+      line-height: 1
+      background: $orange
+      color: $white
+      +transform(rotate(-45deg))
+
+    &:hover
+      .over-buttons
+        opacity: 1
+
+  .link-wrap
+    display: block
+
+  img
+    vertical-align: bottom
+    +size(auto 7em)
+    margin: 1em 0 .5em
+
+  p
+    margin: 0
+    padding: 1em 0
+    background: lighten($gray-lighter, 4)
+    font-size: .9em
+    font-family: $display
+    font-weight: 600
+    text-transform: uppercase
+    color: $gray-dark
+
+  .over-buttons
+    a
+      display: block
+      float: left
+      width: 50%
+      padding: 1em 0
+      color: $white
+      &.learn-more
+        +simple-btn($orange)
+        font-size: .75em
+      &.take-test
+        +simple-btn
+        font-size: .75em
+
+
+    +media($smallScreenUp)
+      +transition(opacity, .2s)
+      opacity: 0
+      +position(absolute, 0 0 0 0)
+      padding-top: 1.5em
+      background: transparentize(darken($blue, 15), .1)
+      a
+        float: none
+        width: 75%
+        margin: 1em auto
+

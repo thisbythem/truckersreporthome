@@ -1,0 +1,22 @@
+%btn-base
+  display: inline-block
+  padding: .75em 1.25em
+  color: #fff
+  font-family: $display
+  font-size: .75em
+  font-weight: 600
+  line-height: 1em
+  text-transform: uppercase
+  border: none
+  border-radius: 5px
+  box-shadow: transparentize($gray-dark, .85) 7px 7px 0 -3px
+  &:hover
+    color: #fff
+  &:focus, &:active
+    outline: none
+
+%vertical-align
+  position: relative
+  top: 50%
+  +transform(translateY(-50%))
+

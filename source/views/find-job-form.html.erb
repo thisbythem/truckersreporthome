@@ -1,10 +1,25 @@
-<form class="find-job-form">
-  <input type="text" placeholder= "Name">
-  <input type="text" placeholder= "Email">
-  <input type="text" placeholder= "Phone">
-  <input type="text" placeholder= "Zip">
-  <select name="experience">
-    <option>I need CDL training</option>
-  </select>
-  <button vaule="submit">Send me offers</button>
+<form class="find-jobs-form">
+  <h2>Trucking Jobs in <b>30 seconds</b></h2>
+  <%= image_tag 'tr-logo-jobs.svg', class: "tr-logo-jobs" %>
+  <fieldset class="general-inputs">
+    <p><input type="text" placeholder= "Name"></p>
+    <p><input type="text" placeholder= "Email"></p>
+    <p><input type="text" placeholder= "Phone"></p>
+    <p><input type="text" placeholder= "Zip"></p>
+  </fieldset>
+  <fieldset class="experience-selects">
+    <p>
+      <select name="experience">
+        <option>I need CDL training</option>
+      </select>
+    </p>
+    <p>
+      <select name="experience">
+        <option>I need CDL training</option>
+      </select>
+    </p>
+  </fieldset>
+  <fieldset class="actions">
+    <button vaule="submit" type="submit">Send job me offers</button>
+  </fieldset>
 </form>

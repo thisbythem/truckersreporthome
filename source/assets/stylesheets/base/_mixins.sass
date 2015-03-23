@@ -3,3 +3,39 @@
     margin-right: flex-gutter()
   &:nth-child(#{$nth}+1)
     clear: none
+
+=btn($btn-bg: $global-link-color)
+  +transition(background-color .2s)
+  @extend %btn-base
+  background-color: $btn-bg
+  &:hover
+    +transition(background-color .2s)
+    background-color: lighten($btn-bg, 5)
+
+=simple-btn($btn-bg: $green)
+  +transition(background, .2s)
+  display: inline-block
+  text-transform: uppercase
+  font-size: .9em
+  font-weight: 600
+  letter-spacing: .025em
+  background: $btn-bg
+  color: $white
+  text-shadow: darken($btn-bg, 5) 1px 1px 0
+  &:hover
+    color: $white
+    background: lighten($btn-bg, 5)
+
+=link-color($link-color: $global-link-color)
+  +transition(color .2s)
+  color: $link-color
+  &:hover, &:active
+    +transition(color .2s)
+    color: lighten($link-color, 10)
+
+=link-color-reverse($link-color: $global-link-color)
+  +transition(color .2s)
+  color: $black
+  &:hover, &:active
+    +transition(color .2s)
+    color: $link-color
