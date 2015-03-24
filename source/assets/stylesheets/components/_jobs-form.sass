@@ -4,6 +4,7 @@ $job-form-bg: $orange
 
   .tr-logo-jobs
     +size(auto 1em)
+    margin-bottom: .25em
 
   select
     width: 100%
@@ -14,7 +15,8 @@ $job-form-bg: $orange
     +btn()
     font-size: 1em
 
-.hero-home .find-jobs-form
+.homepage-hero .find-jobs-form,
+.homepage-body .find-jobs-form
   input
     border: none
 
@@ -38,11 +40,18 @@ $job-form-bg: $orange
 
 // LOCATION STYLES
 
-.find-jobs-form-wrap.home-hero
+.find-jobs-form-wrap.homepage-hero, .find-jobs-form-wrap.homepage-body
+  max-width: 380px
+  margin: 0 auto
   padding: 1rem
   background: $job-form-bg
   border-radius: 5px
   box-shadow: transparentize($gray-dark, .9) 7px 7px 0 0
+
+.find-jobs-form-wrap.homepage-body
+  background: $orange
+  margin-top: 1em
+  margin-bottom: 2em
 
 
 

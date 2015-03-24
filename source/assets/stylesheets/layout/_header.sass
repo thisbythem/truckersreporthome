@@ -6,12 +6,20 @@
 
   .logo
     display: block
-    margin-bottom: .5em
     img
       vertical-align: top
       +size(100% auto)
       max-width: 160px
+    +media($smallScreenUp)
+      margin-bottom: .5em
 
+
+  .open-nav
+    +position(absolute, 25% 1rem auto auto)
+    font-size: 1.5em
+    color: $gray-dark
+    +media($mediumScreenUp)
+      display: none
 
   nav
     display: none

@@ -1,24 +1,28 @@
 $footer-bg: darken($gray-dark, 5)
 
 .site-footer
-  background: $footer-bg url("../images/bg-footer.jpg") center center
-  background-size: auto 200px
+  background: $tr-blue url("../images/bg-footer.jpg") center center
+  background-size: cover
+  border-top: 5px solid $orange
   color: $gray-medium
 
   .footer-top
     padding: 2rem 1rem
+    text-align: center
     +media($smallScreenUp)
       padding: 4rem 1rem
 
 
   nav
-    margin-bottom: 1rem
     a
       display: inline-block
       margin-right: 1em
       font-size: .85em
+      line-height: 1
       text-transform: uppercase
       +link-color($gray-medium)
+      &.advertizing
+        +link-color($green)
 
   .advertise-callout
     h3
@@ -49,7 +53,4 @@ $footer-bg: darken($gray-dark, 5)
     a
       color: darken($gray-medium, 20)
 
-  +media($smallScreenUp)
-    nav, section
-      +span-columns(6)
 

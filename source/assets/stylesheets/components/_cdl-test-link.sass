@@ -3,6 +3,7 @@
   margin-bottom: 2em
 
   .inner
+    +transition(box-shadow, .2s)
     margin: 0 1em
     position: relative
     overflow: hidden
@@ -12,6 +13,7 @@
     &:before
       content: "FREE"
       +position(absolute, 10px auto auto -25px)
+      z-index: 500
       width: 100px
       padding: .5em
       font-size: .65em
@@ -23,6 +25,7 @@
       +transform(rotate(-45deg))
 
     &:hover
+      box-shadow: transparentize($gray-dark, .825) 13px 13px 0 -5px
       .over-buttons
         opacity: 1
 

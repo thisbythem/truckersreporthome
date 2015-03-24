@@ -2,18 +2,51 @@
   +clearfix
   position: relative
   padding: 1rem 0
-  background: darken($orange, 5)
+  background: url(../images/hero-home-temp.jpg) no-repeat left center
+  background-size: cover
 
-  +media($smallScreenUp)
-    background: url(../images/home-hero-temp.jpg) no-repeat center center
-    background-size: cover
+  .tagline
+    margin: 2em 0
+    text-align: center
+    font-size: 2em
+    line-height: 1
+    font-style: italic
+    color: $white
+    text-shadow: transparentize($gray-dark, .5) 0 0 10px, transparentize($gray-dark, .5) 0 0 20px
+
+    span
+      display: block
+      font-size: 2rem
+      img
+        vertical-align: middle
+        +size(auto 2rem)
+        +filter(drop-shadow(transparentize($gray-dark, .15) 0 0 10px))
+
+    +media($smallScreenUp)
+      +position(absolute, 50% auto auto auto)
+      width: 50%
+      margin: -.75em 0 0 0
+      font-size: 3em
+      text-align: center
+      span
+        font-size: 3rem
+        img
+          +size(auto 3rem)
+
+    +media($smallScreenUp)
+      font-size: 2.5em
+
+    +media($hugeScreenUp)
+      font-size: 3.5em
 
   +media($mediumScreenUp)
     padding: 4rem 0
 
   .find-jobs-form-wrap
-    max-width: 380px
-    margin: 0 auto
+    display: none
+
+    +media($smallScreenUp)
+      display: block
 
     +media($mediumScreenUp)
       p
@@ -26,8 +59,10 @@
 
 
 .homepage-cdl-tests-callouts
-  padding: 4rem 0
+  padding: 4rem 0 0
   text-align: center
+  +media($smallScreenUp)
+    padding: 4rem 0
 
   .cdl-test-callouts
     +row
@@ -44,20 +79,26 @@
       +span-columns(4)
       +omega(3n)
 
+.find-jobs-form-wrap.homepage-body
+  +media($smallScreenUp)
+    display: none
+
+
 .news-resources-wrap
   padding: 2rem 0
-  background: lighten($gray-lighter, 4)
+  border-top: 1px solid  darken($yellow, 4)
+  background: $yellow //lighten($gray-lighter, 4)
   +media($smallScreenUp)
     padding: 4rem 0
 
   .sub-section-title
-    color: $gray-medium
+    color: darken($yellow, 20) //$gray-medium
 
   .trucker-news-item
     +clearfix
-    margin-bottom: 2rem
+    margin-bottom: 1.5rem
     padding: 1rem
-    background: lighten($gray-lighter, 6)
+    background: lighten($yellow, 10)
 
     img
       float: left

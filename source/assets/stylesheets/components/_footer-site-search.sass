@@ -1,8 +1,5 @@
 .footer-site-search-wrapper
-  padding: 2.25rem 0
-  border-top: 1px solid darken($yellow, 3)
-  border-bottom: 3px solid $orange
-  background: $yellow
+  padding: 4rem 0 0
 
 .footer-site-search
   text-align: center
@@ -14,34 +11,35 @@
     width: 80%
     margin: 0
     padding: 1.5rem
-    border-color: darken($yellow, 5)
-    background:  lighten($yellow, 15)
+    border-color: $blue //transparentize($white, .55)
+    background:  transparentize($white, .75)
     color: $gray-dark
     box-shadow: none
     &:focus
-      background:  lighten($yellow, 25)
+      background: $white
 
   button[type="submit"]
+    +transition(color, .2s)
     display: inline-block
     vertical-align: middle
-    padding: 0
+    padding: 10px 0
     margin: 0 0 0 1%
     border: none
     background: none
     font-size: 1.5em
-    color: $gray-dark
+    color: $white
     box-shadow: none
-    // &:hover
-    //   color: $white
+    &:hover
+      color: $blue
 
   ::-webkit-input-placeholder
-    color: $gray-dark
+    color: $white
 
   :-moz-placeholder
-    color: $gray-dark
+    color: $white
 
   ::-moz-placeholder
-    color: $gray-dark
+    color: $white
 
   :-ms-input-placeholder
-    color: $gray-dark
+    color: $white
