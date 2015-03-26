@@ -1,6 +1,12 @@
 .container
   +outer-container
   padding: 0 1rem
+  &.narrow
+    max-width: 40em
+  .narrow
+    max-width: 40em
+    margin: 0 auto
+
   +media($mediumScreenUp)
     padding: 0 2rem
 

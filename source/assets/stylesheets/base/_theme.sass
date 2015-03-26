@@ -5,23 +5,17 @@ body
 p
   margin: 0 0 $small-spacing
 
-
 a
   color: $action-color
   text-decoration: none
   transition: color 0.1s linear
-
   &:active,
   &:focus,
   &:hover
     color: darken($action-color, 15%)
-
-
   &:active,
   &:focus
     outline: none
-
-
 
 hr
   margin: $base-spacing 15%
@@ -30,29 +24,61 @@ hr
   border-right: none
   border-top: none
 
-.more
-  +simple-btn($gray-dark)
-  display: inline-block
-  margin-top: .5rem
-  padding: .75em 1.5em
-  font-size: .75em
-  color: $white
+figure
+  margin: 1em 0
 
-img,
-picture
+figcaption
+  margin-top: -.5em
+  font-size: .75em
+  font-style: italic
+  color: $gray-medium
+
+blockquote
+  margin: 1.5em
+  p
+    margin: 0
+    font-size: 1.5em
+    font-style: italic
+    line-height: 1.6
+    color: $tr-blue
+    +media($mediumScreenUp)
+      &:before
+        content: "\f10d"
+        margin: 0 .5em 0 -1.25em
+        font-family: "FontAwesome"
+  cite
+    margin-top: -.5em
+    font-size: .75em
+    font-style: italic
+    color: $gray-medium
+    &:before
+      content: "— "
+
+
+img
   vertical-align: bottom
   margin: 0
   max-width: 100%
 
+.page-header
+  margin-bottom: 2em
+  text-align: center
 
-.section-title
-  margin-top: 0
+.page-title
+  margin: 1.5em 0 0
   font-size: 1.5em
   font-weight: 300
   letter-spacing: .05em
   text-transform: uppercase
   +media($mediumScreenUp)
     font-size: 2.25em
+
+.section-title
+  margin-top: 1.5em
+  font-size: 1.5em
+  font-weight: 300
+  letter-spacing: .05em
+  text-transform: uppercase
 
 .sub-section-title
   margin: 0 0 2em
@@ -63,6 +89,17 @@ picture
   letter-spacing: .05em
   text-transform: uppercase
 
+.main-image
+  +media($largeScreenUp)
+    margin: 1em -2em
+
+.more
+  +simple-btn($gray-dark)
+  display: inline-block
+  margin-top: .5rem
+  padding: .75em 1.5em
+  font-size: .75em
+  color: $white
 
 
 /// GLOBAL ELEMENTS
@@ -75,4 +112,10 @@ picture
   +media($hugeScreenUp)
     border-left: 1px solid $gray-light
     border-right: 1px solid $gray-light
+
+.social-link-wrapper
+  margin: 1.5rem 0
+  text-align:  center
+
+
 

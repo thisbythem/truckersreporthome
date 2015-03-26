@@ -1,0 +1,61 @@
+.comments-wrapper
+
+  .comment
+    margin-bottom: 2rem
+
+    &.depth-2
+      padding-left: 1rem
+      border-left: 1px solid $gray-lighter
+      +media($smallScreenUp)
+        margin-left: 2rem
+
+    header + p:last-of-type
+      margin-bottom: .25em
+
+    .reply
+      font-size: .75em
+      text-transform: uppercase
+
+
+
+  .comment-header
+    +clearfix
+    margin-bottom: .5rem
+
+    img, h5, .post-date
+      display: inline-block
+      vertical-align: middle
+      margin: 0
+
+    img
+      margin-right: .25rem
+      overflow: hidden
+      border-radius: 50%
+
+
+    h5, .post-date
+      margin: 0 0 0 .5rem
+      line-height: 1
+
+    .post-date
+      font-size: .75em
+      font-weight: 300
+      text-transform: uppercase
+      color: $gray-medium
+
+
+.leave-comment-form
+  padding-top: 1rem
+  border-top: 1px solid $gray-lighter
+
+  fieldset
+    +row
+
+  +media($smallScreenUp)
+    .commentor-info
+      margin-bottom: .5rem
+      input
+        +span-columns(4)
+
+
+

@@ -1,13 +1,12 @@
-.cdl-test-callout
+.cdl-test-start
   width: 100%
-  max-width: 340px
-  margin: 0 auto
+  max-width: 380px
   margin-bottom: 2em
   text-align: center
 
   .inner
     +transition(box-shadow, .2s)
-    margin: 0 1em
+    margin: 0 1rem 1rem
     position: relative
     overflow: hidden
     border: 1px solid darken($gray-lighter, 4)
@@ -29,50 +28,44 @@
 
     &:hover
       box-shadow: transparentize($gray-dark, .825) 13px 13px 0 -5px
-      .over-buttons
-        opacity: 1
+      p.start
+        background: lighten($green, 10)
 
-  .link-wrap
-    display: block
+    .link-wrap
+      color: $gray-dark
+      display: block
+
+  h3
+    margin: 2em 0 0
+    text-transform: uppercase
+    span
+      color: $blue
 
   img
     vertical-align: bottom
-    +size(auto 7em)
-    margin: 1em 0 .5em
+    +size(auto 9em)
+    margin: 0
 
   p
     margin: 0
     padding: 1em 0
     background: lighten($gray-lighter, 4)
     font-size: .9em
-    font-family: $display
     font-weight: 600
     text-transform: uppercase
     color: $gray-dark
-
-  .over-buttons
-    a
-      display: block
-      float: left
-      width: 50%
-      padding: 1em 0
+    &.start
+      +transition(background .2s)
+      font-family: $display
+      font-size: 1.2em
+      background: $green
       color: $white
-      &.learn-more
-        +simple-btn($orange)
-        font-size: .75em
-      &.take-test
-        +simple-btn
-        font-size: .75em
 
 
-    +media($smallScreenUp)
-      +transition(opacity, .2s)
-      opacity: 0
-      +position(absolute, 0 0 0 0)
-      padding-top: 1.5em
-      background: transparentize(darken($blue, 15), .1)
-      a
-        float: none
-        width: 75%
-        margin: 1em auto
+.cdl-test-general-landing
+  .cdl-test-start
+    img
+      +size(auto 7em)
+
+
 

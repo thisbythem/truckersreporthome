@@ -1,0 +1,57 @@
+.cdl-practice-tests
+  .cdl-test-callout
+
+    +media($smallScreenUp)
+      +span-columns(4)
+      +omega(3n)
+
+//TEST DETAIL PAGES
+.cdl-test-start-wrapper
+  +row
+  text-align: center
+
+  .cdl-test-start
+    margin: 0 auto
+    +media($smallScreenUp)
+      display: inline-block
+
+.cld-general-knowledge-all-tests
+
+  .cdl-test-start-wrapper
+    margin: 0 auto 1rem
+
+    .section-title
+      margin-top: .5em
+      text-align: center
+
+    +media($smallScreenUp)
+      +span-columns(6)
+
+.cdl-general-knowledge-sections-wrapper
+  text-align: center
+  .test-sections-wrap
+    +row
+    margin: 2rem 0 0
+
+    .test-section-link
+      +transition(all .2s)
+      display: block
+      max-width: 260px
+      margin: 0 auto .5rem
+      padding: 1.25rem 0
+      background: $gray-lighter
+      text-align: center
+      line-height: 1
+      &:hover
+        background: $blue
+        color: $white
+
+      +media($smallScreenUp)
+        +span-columns(4)
+        +omega(3n)
+        margin-bottom: 1rem
+
+      +media($largeScreenUp)
+        +omega-reset(3n)
+        +span-columns(3)
+        +omega(4n)
