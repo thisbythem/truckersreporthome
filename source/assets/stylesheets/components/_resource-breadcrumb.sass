@@ -1,0 +1,20 @@
+.resource-breadcrumb
+  padding: .25rem 0
+  background: lighten($gray-lighter, 4)
+  border-bottom: 1px solid lighten($gray-lighter, 2)
+  text-align: left
+
+  a
+    font-size: .75em
+    &:before
+      content: "|"
+      display: inline-block
+      margin-right: .25em
+    &:first-child
+      font-weight: 600
+      text-transform: uppercase
+      +link-color($orange)
+      &:before
+        content: ""
+
+

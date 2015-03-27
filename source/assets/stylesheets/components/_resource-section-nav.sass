@@ -1,0 +1,42 @@
+.resource-section-nav
+  h5
+    text-transform: uppercase
+    color: $orange
+  p
+    font-size: .75em
+    font-style: italic
+
+  .section-link
+    display: block
+    position: relative
+    .inner
+      +row
+      margin-bottom: 1rem
+      padding: 1rem 2rem 1rem 1rem
+      background: lighten($gray-lighter, 4)
+      line-height: 1.2
+    &.active:after
+      content: "\f005"
+      display: block
+      font-family: "FontAwesome"
+      +position(absolute, 50% 1rem auto auto)
+      margin-top: -.5em
+      color: $orange
+      +media($smallScreenUp)
+        +position(absolute, 50% auto auto -1.5em)
+        font-size: 2em
+        margin-top: -.75em
+
+    img
+      display: none
+
+    +media($smallScreenUp)
+      img
+        +span-columns(2)
+        margin-bottom: 0
+
+      .section-link-title
+        +span-columns(10)
+        position: relative
+
+

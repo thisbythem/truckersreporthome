@@ -1,0 +1,25 @@
+.trucking-school-detail-info
+  text-align: center
+
+  address
+    font-style: normal
+    font-size: 1.15em
+    p
+      margin: 0
+
+  +media($smallScreenUp)
+    +row
+    background: lighten($gray-lighter, 4)
+    .trucking-school-image, address
+      +span-columns(6)
+
+    address
+      text-align: left
+      padding: 2rem
+
+    img
+      margin: 0
+      vertical-align: top
+
+
+

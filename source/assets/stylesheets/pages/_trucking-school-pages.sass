@@ -1,0 +1,76 @@
+.state-school-links-wrap
+  +row
+
+  .state-link
+    +span-columns(6)
+    +omega(2n)
+    margin-bottom: 1rem
+    padding: .5em
+    background: lighten($gray-lighter, 4)
+    &.disabled
+      opacity: .5
+      color: $gray-medium
+      cursor: default
+
+    +media($smallScreenUp)
+      +omega-reset(2n)
+      +span-columns(4)
+      +omega(3n)
+
+    +media($largeScreenUp)
+      +omega-reset(3n)
+      +span-columns(3)
+      +omega(4n)
+
+//STATE DETAIL PAGE
+.state-school-listing-wrapper
+  margin-bottom: 2rem
+
+.state-school-listing
+  +row
+  margin-top: .75rem
+  padding-bottom: .75rem
+  border-bottom: 1px solid lighten($gray-lighter, 3)
+  &.listing-header
+    display: none
+    padding: .5rem
+    margin-bottom: 1rem
+    background: lighten($gray-lighter, 4)
+    p
+      font-size: .75em
+      font-weight: 600
+      text-transform: uppercase
+
+  .school-name
+    font-weight: 600
+
+  p
+    margin: 0
+    line-height: 1.4
+    .label
+      display: block
+      font-size: .75em
+      font-style: italic
+      color: $gray-medium
+
+
+  +media($smallScreenUp)
+    &.listing-header
+      display: block
+    .school-training
+      +span-columns(4)
+    .school-name
+      +span-columns(3)
+    .school-cost, .school-detail-link
+      +span-columns(1.5)
+      text-align: center
+    .school-city
+      +span-columns(2)
+
+    .school-detail-link
+      text-align: right
+
+    p
+      font-size: .85em
+      .label
+        display: none

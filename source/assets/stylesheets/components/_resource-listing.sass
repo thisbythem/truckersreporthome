@@ -1,0 +1,23 @@
+.resource-listing
+  +clearfix
+  margin-bottom: 2rem
+  padding: 1rem
+  background: lighten($gray-lighter, 4)
+
+  h3
+    margin: 0 0 .5em
+    font-size: 1.75em
+    font-weight: 400
+
+  img
+    margin-bottom: 1rem
+
+  +media($smallScreenUp)
+    img
+      float: left
+      +size(40% auto)
+      margin-right: 2rem
+      margin-bottom: 0
+
+  +media($mediumScreenUp)
+    padding: 2rem
