@@ -1,0 +1,125 @@
+.freight-factoring-listing-wrapper
+
+.freight-factoring-listing
+  padding: 1rem
+  &:nth-child(odd)
+    background: lighten($gray-lighter, 2)
+  +media($smallScreenUp)
+    padding: 2rem
+
+  header
+    +clearfix
+    img
+      +size(auto 3em)
+      vertical-align: middle
+      margin-bottom: 1rem
+
+    h4
+      margin: 0
+      font-size: 1.25em
+      line-height: 1
+      font-family: $base-font-family
+
+    .more-info
+      +simple-btn($gray-dark)
+      padding: .25em .75em
+
+    .free-quote
+      +simple-btn()
+      padding: .25em .75em
+
+    .listing-actions
+      margin: 0 0 1rem
+      a
+        font-size: .85em
+
+    +media($smallScreenUp)
+      img
+        float: left
+      .listing-actions
+        float: right
+        margin: 1rem 0 0
+      h4
+        clear: both
+
+
+  .company-details
+    +row
+
+    dl
+      font-size: .75em
+      line-height: 1.1
+      +span-columns(6)
+      +omega(2n)
+
+
+    dt
+      margin-bottom: .5em
+      text-transform: uppercase
+      font-size: .85em
+    dd
+      margin-bottom: .5em
+
+    i
+      color: $green
+
+    +media($smallScreenUp)
+      dl
+        +omega-reset(2n)
+        +span-columns(2)
+
+
+///COMPANY DETAIL LISTING
+.freight-factoring-company-detail-listing-wrapper
+  margin-top: 2rem
+
+
+.freigh-factory-company-detail
+  +row
+  margin-bottom: 2rem
+
+  header
+
+    img
+      +size(auto 4em)
+
+    h3
+      margin: .5em 0
+      font-size: 1.5em
+
+    .company-phone
+      font-size: 1.25em
+      font-weight: 600
+
+    .contact-company
+      +simple-btn()
+      padding: 1em 1.5em
+
+  .company-details
+    li
+      margin-bottom: .5em
+      font-size: .9em
+      line-height: 1.2
+
+    li:before
+      content: "\f00c"
+      display: inline-block
+      margin-right: .5em
+      font-family: "FontAwesome"
+      color: $green
+
+
+  +media($smallScreenUp)
+    .company-details
+      +span-columns(6)
+
+    header
+      +span-columns(4)
+      +shift(1)
+      text-align: left
+      border: none
+
+
+
+
+
