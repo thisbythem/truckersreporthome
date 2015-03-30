@@ -1,0 +1,26 @@
+.advertising-testimony-wrapper
+  text-align: center
+  margin-bottom: 2rem
+
+  .testimony-quote
+    font-size: 1.25em
+    &:before, &:after
+      display: inline-block
+      font-family: "FontAwesome"
+      font-size: .85em
+      color: $orange
+    &:before
+      content: "\f10d"
+      margin-right: .25em
+    &:after
+      content: "\f10e"
+  img
+    +size(auto 4em)
+    overflow: hidden
+    border-radius: 50%
+
+  .testimony-person
+    text-transform: uppercase
+    font-size: .75em
+    font-weight: 600
+    line-height: 1.1

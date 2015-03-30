@@ -2,6 +2,15 @@ body
   background: lighten($gray-lighter, 5)
   background-size: auto 200px
 
+.outside-wrapper
+  +clearfix
+  max-width: 1350px
+  margin: 0 auto
+  background: $white
+  +media($hugeScreenUp)
+    border-left: 1px solid $gray-light
+    border-right: 1px solid $gray-light
+
 p
   margin: 0 0 $small-spacing
 
@@ -64,6 +73,16 @@ img
   margin-bottom: 2em
   text-align: center
 
+  .page-categories
+    margin: .5em 0
+
+    a
+      display: inline-block
+      margin: .5em
+      font-size: .8em
+      line-height: 1
+      text-transform: uppercase
+
 .page-title
   margin: 1.5em 0 0
   font-size: 1.5em
@@ -99,7 +118,6 @@ img
   letter-spacing: .05em
   text-transform: uppercase
 
-
 .center-title
   padding: 0 .5em
   text-align: center
@@ -116,21 +134,15 @@ img
   font-size: .75em
   color: $white
 
-
-/// GLOBAL ELEMENTS
-
-.outside-wrapper
-  +clearfix
-  max-width: 1350px
-  margin: 0 auto
-  background: $white
-  +media($hugeScreenUp)
-    border-left: 1px solid $gray-light
-    border-right: 1px solid $gray-light
-
 .social-link-wrapper
   margin: 1.5rem 0
   text-align:  center
 
-
+.center-form-wrap
+  margin: 1.5rem 0
+  form
+    background: $gray-lighter
+    min-height: 400px
+    max-width: 460px
+    margin: 0 auto
 
