@@ -1,7 +1,7 @@
 .footer-site-search-wrapper
   padding: 4rem 0 0
 
-.footer-site-search
+.site-search
   text-align: center
 
   input[type="text"]
@@ -27,19 +27,21 @@
     border: none
     background: none
     font-size: 1.5em
-    color: $white
+    color: $blue
     box-shadow: none
+    &:hover
+      color: lighten($blue, 5)
+
+.footer-site-search
+  input[type="text"]
+    +placeholder
+      color: $white
+  button[type="submit"]
+    color: $white
     &:hover
       color: $blue
 
-  ::-webkit-input-placeholder
-    color: $white
-
-  :-moz-placeholder
-    color: $white
-
-  ::-moz-placeholder
-    color: $white
-
-  :-ms-input-placeholder
-    color: $white
+.search-page-site-search
+  input[type="text"]
+    +placeholder
+      color: $blue

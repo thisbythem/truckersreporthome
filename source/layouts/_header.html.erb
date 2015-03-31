@@ -3,9 +3,9 @@
     <%= image_tag 'tr-logo.svg' %>
   <% end %>
 
-  <a href="#" class="open-nav"><i class="fa fa-bars"></i></a>
+  <a href="#" class="open-nav" data-behavior="toggler" data-toggler-target="menu"><i class="fa fa-bars"></i></a>
 
-  <nav>
+  <nav  data-toggler-id="menu">
      <%= link_to 'Forum', '#' %>
      <%= link_to 'CDL Practice Tests', '/cdl-practice-tests/' %>
      <%= link_to 'Resources', '/resources' %>

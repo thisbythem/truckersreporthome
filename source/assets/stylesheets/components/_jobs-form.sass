@@ -7,10 +7,12 @@ $job-form-bg: $orange
     +size(auto 1rem)
     margin-bottom: .25em
 
+  label
+    display: none
+
   select
     width: 100%
     margin-bottom: .5em
-
 
   button[type="submit"]
     +btn()
@@ -138,5 +140,36 @@ $job-form-bg: $orange
       font-size: 1.15em
 
 
+/// SHOW LABELS — NO PLACEHOLDERS
+.show-labels form
+  label
+    display: block
+    font-size: .75em
+    line-height: 1
+    text-transform: uppercase
+    text-shadow: darken($job-form-bg, 10) 1px 1px 0
+    color: $white
+    +media($smallScreenUp)
+      font-size: .65em
+
+  select
+    margin: .5rem 0
+
+  .actions
+    margin-top: 1rem
+    +media($smallScreenUp)
+      margin-top: .5rem
+
+  ::-webkit-input-placeholder
+    color: transparent
+
+  :-moz-placeholder
+    color: transparent
+
+  ::-moz-placeholder
+    color: transparent
+
+  :-ms-input-placeholder
+    color: transparent
 
 

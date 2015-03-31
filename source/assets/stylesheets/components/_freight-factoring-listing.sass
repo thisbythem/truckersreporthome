@@ -1,57 +1,91 @@
 .freight-factoring-listing-wrapper
 
 .freight-factoring-listing
-  padding: 1rem
-  &:nth-child(odd)
-    background: lighten($gray-lighter, 2)
+  +clearfix
+  margin-bottom: 2rem
   +media($smallScreenUp)
-    padding: 2rem
+    margin-bottom: 3rem
 
   header
     +clearfix
+    background: lighten($gray-lighter, 4)
+
+    .header-top
+      +clearfix
+      padding: 1rem
+      +media($smallScreenUp)
+        padding: 2rem
+
+    .company-info
+      +row
+      height: 0
+      overflow: hidden
+      &.open
+        height: auto
+        padding: 1rem
+        background: lighten($gray-lighter, 2)
+        +media($smallScreenUp)
+          padding: 2rem
+
+      .company-about
+        font-size: .85em
+
+        li
+          margin-bottom: .5em
+          font-size: .9em
+          line-height: 1.2
+
+        li:before
+          content: "\f00c"
+          display: inline-block
+          margin-right: .5em
+          font-family: "FontAwesome"
+          color: $green
+
+      +media($smallScreenUp)
+        .company-name-contact
+          +span-columns(4)
+        .company-about
+          +span-columns(8)
+
     img
       +size(auto 3em)
-      vertical-align: middle
-      margin-bottom: 1rem
 
     h4
-      margin: 0
+      margin: 0 0 .5em
       font-size: 1.25em
       line-height: 1
       font-family: $base-font-family
 
     .more-info
-      +simple-btn($gray-dark)
+      +simple-btn(lighten($gray-medium, 15))
+      display: block
+      margin-top: 1rem
       padding: .25em .75em
-
-    .free-quote
-      +simple-btn()
-      padding: .25em .75em
-
-    .listing-actions
-      margin: 0 0 1rem
-      a
-        font-size: .85em
+      font-size: .75em
 
     +media($smallScreenUp)
       img
         float: left
-      .listing-actions
+        +size(auto 3em)
+      .more-info
+        display: inline-block
         float: right
-        margin: 1rem 0 0
-      h4
-        clear: both
-
 
   .company-details
     +row
+    border-top: 1px solid $gray-lighter
+    background: lighten($gray-lighter, 0)
+    padding: 1rem
+    +media($smallScreenUp)
+      padding: 1rem 2rem
 
     dl
-      font-size: .75em
-      line-height: 1.1
       +span-columns(6)
       +omega(2n)
-
+      margin-top: 0
+      font-size: .75em
+      line-height: 1.1
 
     dt
       margin-bottom: .5em
@@ -69,55 +103,82 @@
         +span-columns(2)
 
 
-///COMPANY DETAIL LISTING
-.freight-factoring-company-detail-listing-wrapper
-  margin-top: 2rem
+  footer
+    +clearfix
 
+    .open-actions
+      +clearfix
 
-.freigh-factory-company-detail
-  +row
-  margin-bottom: 2rem
+    .free-quote
+      +simple-btn()
+      display: block
+      padding: .25em 1em
+      text-align: center
+      +media($smallScreenUp)
+        text-align: right
 
-  header
-
-    img
-      +size(auto 4em)
+  .get-freight-factor-quote-form
+    +row
+    height: 0
+    overflow: hidden
+    background: $green
+    +media($smallScreenUp)
+    &.open
+      height: auto
+      padding: 1rem
+      +media($smallScreenUp)
+        padding: 1.5rem 2rem
 
     h3
-      margin: .5em 0
+      margin: 0 0 .5em
+      padding-bottom: .5em
+      border-bottom: 1px solid lighten($green, 5)
       font-size: 1.5em
+      font-weight: 300
+      text-shadow: darken($green, 5) 1px 1px 0
+      color: $white
 
-    .company-phone
-      font-size: 1.25em
-      font-weight: 600
-
-    .contact-company
-      +simple-btn()
-      padding: 1em 1.5em
-
-  .company-details
-    li
-      margin-bottom: .5em
-      font-size: .9em
-      line-height: 1.2
-
-    li:before
-      content: "\f00c"
-      display: inline-block
-      margin-right: .5em
-      font-family: "FontAwesome"
-      color: $green
-
-
-  +media($smallScreenUp)
-    .company-details
-      +span-columns(6)
-
-    header
-      +span-columns(4)
-      +shift(1)
+    label
+      font-size: .75em
+      line-height: 1
       text-align: left
+      text-shadow: darken($green, 5) 1px 1px 0
+      color: $white
+
+    input, textarea
       border: none
+
+    textarea
+      line-height: 1.4
+
+    fieldset
+      margin: 0
+
+    .actions
+      margin-top: .5rem
+      padding-top: 1rem
+      border-top: 1px solid lighten($green, 5)
+      text-align: right
+
+      p
+        color: $white
+        text-shadow: darken($green, 5) 1px 1px 0
+        margin-bottom: .5em
+        +media($smallScreenUp)
+          display: inline-block
+          margin-right: 1em
+
+    button
+      font-size: 1.25em
+
+    +media($smallScreenUp)
+      .form-top
+        +row
+      .user-info
+        +span-columns(5)
+      .message
+        +span-columns(7)
+
 
 
 
