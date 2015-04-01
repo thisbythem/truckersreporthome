@@ -2,9 +2,9 @@
   <header>
     <div class="header-top">
       <%= image_tag "freight-logo-temp.png" %>
-      <a href="#company-anchor" class="more-info">More Info</a>
+      <a href="#" class="more-info" data-behavior="toggler" data-toggler-target="company-info">More Info</a>
     </div>
-    <div class="company-info">
+    <div class="company-info" data-toggler-id="company-info"><div class="inner">
       <div class="company-name-contact">
         <h4>Thunder Funding</h4>
         <p class="company-phone">1-800-222-2525</p>
@@ -26,7 +26,7 @@
           <li>Set up fees? No way, never!</li>
           <li>24/7 online account access</li>
         </ul>
-      </div>
+      </div></div>
     </div>
   </header>
   <div class="company-details">
@@ -61,24 +61,26 @@
     </dl>
   </div>
   <footer>
-    <a href="/" class="free-quote">Get Your Free Quote <i class="fa fa-arrow-down"></i></a>
-    <form class="get-freight-factor-quote-form">
-      <h3>Contact Thunder Funding for a quote!</h3>
-      <div class="form-top">
-        <fieldset class="user-info">
-          <p><label>Your Name</label><input type="text"></p>
-          <p><label>Your Email</label><input type="text"></p>
-          <p><label>Your Zip</label><input type="text"></p>
-        </fieldset>
-        <fieldset class="message">
-          <label>Your Message</label>
-          <textarea rows="6" placeholder="i am interested in receiving a price quote for your freight factoring services and learning more about your company. Please contact me directly with additional information."></textarea>
+    <a href="#" class="free-quote" data-behavior="toggler" data-toggler-target="freight-quote-form">Get Your Free Quote <i class="fa fa-arrow-down"></i></a>
+    <form class="get-freight-factor-quote-form" data-toggler-id="freight-quote-form">
+      <div class="inner">
+        <h3>Contact Thunder Funding for a quote!</h3>
+        <div class="form-top">
+          <fieldset class="user-info">
+            <p><label>Your Name</label><input type="text"></p>
+            <p><label>Your Email</label><input type="text"></p>
+            <p><label>Your Zip</label><input type="text"></p>
+          </fieldset>
+          <fieldset class="message">
+            <label>Your Message</label>
+            <textarea rows="6" placeholder="i am interested in receiving a price quote for your freight factoring services and learning more about your company. Please contact me directly with additional information."></textarea>
+          </fieldset>
+        </div>
+        <fieldset class="actions">
+          <p>Start saving money today!</p>
+          <button vaule="submit" type="submit">Get Quote</button>
         </fieldset>
       </div>
-      <fieldset class="actions">
-        <p>Start saving money today!</p>
-        <button vaule="submit" type="submit">Get Quote</button>
-      </fieldset>
     </form>
   </footer>
 </div>

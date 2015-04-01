@@ -3,9 +3,9 @@
     <%= image_tag 'tr-logo.svg' %>
   <% end %>
 
-  <a href="#" class="open-nav" data-behavior="toggler" data-toggler-target="menu"><i class="fa fa-bars"></i></a>
+  <a href="#" class="open-nav" data-behavior="toggler" data-toggler-target="main-menu"><i class="fa fa-bars"></i></a>
 
-  <nav  data-toggler-id="menu">
+  <nav  data-toggler-id="main-menu">
      <%= link_to 'Forum', '#' %>
      <%= link_to 'CDL Practice Tests', '/cdl-practice-tests/' %>
      <%= link_to 'Resources', '/resources' %>
@@ -13,8 +13,12 @@
      <%= link_to 'Trucking Insurance', '/trucking-insurance' %>
      <%= link_to 'Freight Factoring', '/freight-factoring' %>
      <%= link_to 'Trucking Jobs', '#' %>
+     <form class="site-search header-site-search">
+       <input type="text" placeholder="Search Truckers Report">
+       <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+     </form>
    </nav>
 
-   <a href="#site-search" class="search-anchor-link"><i class="fa fa-search"></i></a>
+   <a href="#site-search" class="search-anchor-link" data-behavior="autoscroll"><i class="fa fa-search"></i></a>
 
 </header>

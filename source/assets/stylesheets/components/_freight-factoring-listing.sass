@@ -17,15 +17,17 @@
         padding: 2rem
 
     .company-info
-      +row
-      height: 0
+      +transition(height, .3s)
+      max-height: 0
       overflow: hidden
-      &.open
-        height: auto
+      .inner
+        +row
         padding: 1rem
-        background: lighten($gray-lighter, 2)
         +media($smallScreenUp)
           padding: 2rem
+      &.open
+        max-height: 600px
+        background: lighten($gray-lighter, 2)
 
       .company-about
         font-size: .85em
@@ -118,16 +120,17 @@
         text-align: right
 
   .get-freight-factor-quote-form
+    +transition(max-height, .3s)
     +row
-    height: 0
+    max-height: 0
     overflow: hidden
     background: $green
-    +media($smallScreenUp)
-    &.open
-      height: auto
+    .inner
       padding: 1rem
       +media($smallScreenUp)
         padding: 1.5rem 2rem
+    &.open
+      max-height: 1000px
 
     h3
       margin: 0 0 .5em
