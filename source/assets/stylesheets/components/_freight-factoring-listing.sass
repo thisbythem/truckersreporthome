@@ -29,6 +29,11 @@
         max-height: 600px
         background: lighten($gray-lighter, 2)
 
+      .scroll-to-form
+        +simple-btn
+        padding: .25em 1em
+        margin-bottom: 1rem
+
       .company-about
         font-size: .85em
 
@@ -70,9 +75,10 @@
       img
         float: left
         +size(auto 3em)
+        margin-right: 1rem
       .more-info
         display: inline-block
-        float: right
+        float: left
 
   .company-details
     +row
@@ -114,10 +120,7 @@
     .free-quote
       +simple-btn()
       display: block
-      padding: .25em 1em
-      text-align: center
-      +media($smallScreenUp)
-        text-align: right
+      padding: .75em 2rem
 
   .get-freight-factor-quote-form
     +transition(max-height, .3s)
@@ -155,13 +158,13 @@
       line-height: 1.4
 
     fieldset
+      +row
       margin: 0
 
     .actions
       margin-top: .5rem
       padding-top: 1rem
       border-top: 1px solid lighten($green, 5)
-      text-align: right
 
       p
         color: $white
@@ -175,12 +178,10 @@
       font-size: 1.25em
 
     +media($smallScreenUp)
-      .form-top
-        +row
       .user-info
-        +span-columns(5)
-      .message
-        +span-columns(7)
+        p
+          +span-columns(4)
+
 
 
 

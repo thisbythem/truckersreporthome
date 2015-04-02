@@ -99,11 +99,13 @@ $job-form-bg: $orange
     header p
       font-size: 1.15em
 
+
+///FORM WIDE
+
 .find-jobs-form-wrap.form-wide
   +clearfix
   padding: 2rem 1rem
   background: $job-form-bg
-
 
   .inner
     +row
@@ -112,7 +114,8 @@ $job-form-bg: $orange
 
   form
     padding: 1rem
-    background: lighten($job-form-bg, 5)
+    background: lighten($job-form-bg, 3)
+    border: 1px solid lighten($job-form-bg, 15)
     border-radius: 5px
     box-shadow: transparentize($gray-dark, .9) 7px 7px 0 0
 
@@ -127,7 +130,7 @@ $job-form-bg: $orange
       margin: 1.5em auto
       header
         +span-columns(7)
-        padding-top: 2rem
+        padding-top: 4rem
       form
         +span-columns(5)
 

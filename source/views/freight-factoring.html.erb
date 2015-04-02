@@ -18,14 +18,17 @@
 
     <div class="freight-factoring-listing">
       <header>
+        <a href="#" class="open-more-info" data-behavior="toggler" data-toggler-target="company-1-info">
         <div class="header-top">
           <%= image_tag "freight-logo-temp.png" %>
-          <a href="#" class="more-info" data-behavior="toggler" data-toggler-target="company-1-info">More Info</a>
+          <p class="more-info">More Info</p>
         </div>
+        </a>
         <div class="company-info" data-toggler-id="company-1-info"><div class="inner">
           <div class="company-name-contact">
             <h4>Thunder Funding</h4>
             <p class="company-phone">1-800-222-2525</p>
+            <a href="#quote-form" class="scroll-to-form" data-behavior="toggler autoscroll" data-toggler-target="freight-quote-form-1">Get Free Quote</a>
           </div>
           <div class="company-about">
             <h4>#1 choice for small carriers and owner-operators</h4>
@@ -79,110 +82,16 @@
         </dl>
       </div>
       <footer>
-        <a href="#" class="free-quote" data-behavior="toggler" data-toggler-target="freight-quote-form-1">Get Your Free Quote <i class="fa fa-arrow-down"></i></a>
-        <form class="get-freight-factor-quote-form" data-toggler-id="freight-quote-form-1">
+        <a href="#" class="free-quote" data-behavior="toggler" data-toggler-target="freight-quote-form-1">Get Free Quote <i class="fa fa-arrow-down"></i></a>
+        <form class="get-freight-factor-quote-form" data-toggler-id="freight-quote-form-1" id="quote-form">
           <div class="inner">
             <h3>Contact Thunder Funding for a quote!</h3>
-            <div class="form-top">
-              <fieldset class="user-info">
-                <p><label>Your Name</label><input type="text"></p>
-                <p><label>Your Email</label><input type="text"></p>
-                <p><label>Your Zip</label><input type="text"></p>
-              </fieldset>
-              <fieldset class="message">
-                <label>Your Message</label>
-                <textarea rows="6" placeholder="i am interested in receiving a price quote for your freight factoring services and learning more about your company. Please contact me directly with additional information."></textarea>
-              </fieldset>
-            </div>
-            <fieldset class="actions">
-              <p>Start saving money today!</p>
-              <button vaule="submit" type="submit">Get Quote</button>
+            <fieldset class="user-info">
+              <p><label>Your Name</label><input type="text"></p>
+              <p><label>Your Email</label><input type="text"></p>
+              <p><label>Your Phone</label><input type="text"></p>
             </fieldset>
-          </div>
-        </form>
-      </footer>
-    </div>
-
-    <div class="freight-factoring-listing">
-      <header>
-        <div class="header-top">
-          <%= image_tag "freight-logo-temp.png" %>
-          <a href="#" class="more-info" data-behavior="toggler" data-toggler-target="company-2-info">More Info</a>
-        </div>
-        <div class="company-info" data-toggler-id="company-2-info"><div class="inner">
-          <div class="company-name-contact">
-            <h4>Thunder Funding</h4>
-            <p class="company-phone">1-800-222-2525</p>
-          </div>
-          <div class="company-about">
-            <h4>#1 choice for small carriers and owner-operators</h4>
-            <p>Se habla espanol</p>
-            <p>OOIDA and BBB Member</p>
-            <p>Thunder Funding can also assist you with: Truck Insurance, Leasing, GPS Software, Prepass, USDA inspections, Fuel Reports, and most importantly, finding Freight!</p>
-            <ul>
-              <li>25 years of trucking experience</li>
-              <li>Thunder Funding can help you find loads</li>
-              <li>Non-Recourse means we take the risk so you don’t have to</li>
-              <li>Free fuel cards to all carriers + fuel discounts</li>
-              <li>Electronic sign up takes just 3 minutes!</li>
-              <li>Same day funding available</li>
-              <li>Originals not required – fax or email copies</li>
-              <li>Pick and choose which customers to factor</li>
-              <li>Set up fees? No way, never!</li>
-              <li>24/7 online account access</li>
-            </ul>
-          </div></div>
-        </div>
-      </header>
-      <div class="company-details">
-        <dl class="company-rate long">
-          <dt>Rate</dt>
-          <dd>2% – 4%</dd>
-          <dd>Non-Recourse Factoring</dd>
-        </dl>
-        <dl class="company-reserve short">
-          <dt>Reserve</dt>
-          <dd>No Reserve</dd>
-        </dl>
-        <dl class="company-payment-options">
-          <dt>Rate</dt>
-          <dd>Wire: $20</dd>
-          <dd>ACH: $10</dd>
-          <dd>Express Code: $10</dd>
-        </dl>
-        <dl class="company-fuel-card short">
-          <dt>Fuel Card</dt>
-          <dd>Yes <i class="fa fa-check"></i></dd>
-        </dl>
-        <dl class="company-fuel-advance long">
-          <dt>Fuel Advances</dt>
-          <dd>Yes <i class="fa fa-check"></i></dd>
-          <dd>$10 – $20 per advance, will advance up to 50%</dd>
-        </dl>
-        <dl class="company-credit-checks">
-          <dt>Credit Checks</dt>
-          <dd>Yes <i class="fa fa-check"></i></dd>
-          <dd>Free online credit checks</dd>
-        </dl>
-      </div>
-      <footer>
-        <a href="#" class="free-quote" data-behavior="toggler" data-toggler-target="freight-quote-form-2">Get Your Free Quote <i class="fa fa-arrow-down"></i></a>
-        <form class="get-freight-factor-quote-form" data-toggler-id="freight-quote-form-2">
-          <div class="inner">
-            <h3>Contact Thunder Funding for a quote!</h3>
-            <div class="form-top">
-              <fieldset class="user-info">
-                <p><label>Your Name</label><input type="text"></p>
-                <p><label>Your Email</label><input type="text"></p>
-                <p><label>Your Zip</label><input type="text"></p>
-              </fieldset>
-              <fieldset class="message">
-                <label>Your Message</label>
-                <textarea rows="6" placeholder="i am interested in receiving a price quote for your freight factoring services and learning more about your company. Please contact me directly with additional information."></textarea>
-              </fieldset>
-            </div>
-            <fieldset class="actions">
-              <p>Start saving money today!</p>
+          <fieldset class="actions">
               <button vaule="submit" type="submit">Get Quote</button>
             </fieldset>
           </div>
