@@ -1,0 +1,60 @@
+.job-posting-block
+  margin-bottom: 1.25rem
+  background: $white
+  border: 1px solid $gray-lighter
+  box-shadow: transparentize($black, .9) 10px 0 50px 0
+
+.job-posting-block-header
+  padding: 1.5rem 1.5rem 1rem
+  figure
+    margin: 0
+    text-align: center
+
+  .block-headline
+    font-weight: 600
+    font-size: 1.25em
+    line-height: 1.2
+    letter-spacing: -.025em
+
+  .show
+    +btn($gray-medium)
+    margin-top: 1rem
+    box-shadow: none
+
+  +media($smallScreenDown)
+    figure
+      margin-bottom: 1rem
+    img
+      max-height: 2rem
+
+  +media($smallScreenUp)
+    figure
+      float: left
+      margin-right: 1rem
+    img
+      +size(auto 1.25em)
+    .show
+      float: right
+      margin-top: -.25rem
+
+.job-posting-block-content
+  padding: 0 1.5rem 1rem
+  p
+    margin: 0
+    line-height: 1.2
+    a
+
+  span, b
+    @extend %small-heavy-caps
+  span
+    color: $gray-medium
+
+.job-posting-block-footer
+  padding: .5rem 1.5rem 1rem
+  border-top: 1px solid $gray-light
+  line-height: 1
+  a
+    +link-color($gray-medium)
+    display: inline-block
+    margin: .5rem .5rem 0 0
+    @extend %small-heavy-caps

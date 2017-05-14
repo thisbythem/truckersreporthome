@@ -39,3 +39,10 @@
   &:hover, &:active
     +transition(color .2s)
     color: $link-color
+
+=last-p
+  p:last-of-type
+    margin-bottom: 0
+
+=add-box-shadow($distance)
+  box-shadow: transparentize($black, .9) $distance $distance 0 0

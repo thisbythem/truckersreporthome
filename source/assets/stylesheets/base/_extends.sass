@@ -8,8 +8,8 @@
   line-height: 1em
   text-transform: uppercase
   border: none
-  border-radius: 5px
-  box-shadow: transparentize($gray-dark, .85) 7px 7px 0 -3px
+  border-radius: .25em
+  box-shadow: transparentize($gray-dark, .85) 7px 7px 0 -5px
   &:hover
     color: #fff
   &:focus, &:active
@@ -20,3 +20,9 @@
   top: 50%
   +transform(translateY(-50%))
 
+%small-heavy-caps
+  font-size: .775em
+  font-weight: 700
+  text-transform: uppercase
+  +media($mediumScreenUp)
+    font-size: .675em
