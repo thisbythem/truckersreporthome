@@ -127,14 +127,16 @@
   .sub-group:first-of-type
     text-align: center
     img
-      max-height: 460px
+      height: 250px
 
   +media($mediumScreenUp)
-  .sub-group:first-of-type
-    +span-columns(5)
-    padding: 0 1rem
-  .sub-group:last-of-type
-    +span-columns(7)
+    .sub-group:first-of-type
+      +span-columns(5)
+      padding: 0 1rem
+      img
+        height: auto
+    .sub-group:last-of-type
+      +span-columns(7)
 
 
 
